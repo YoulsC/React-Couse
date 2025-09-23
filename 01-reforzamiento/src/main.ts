@@ -1,4 +1,6 @@
 import './style.css';
+import { getHeroesByOwner } from './bases/08-imp-exp';
+import { Owner } from './data/heroes.data';
 // import './bases/01-const-let';
 // import './bases/02-template-string';
 // import './bases/03-object-literal';
@@ -16,5 +18,9 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
    <h1>Hola Mundo lol<h1>
   </div>
 `
+
+//En el main.ts usaran la funcion
+//console.log( getHeroesByOwner('Marvel'));
+console.log(getHeroesByOwner(Owner.DC));
 
 
